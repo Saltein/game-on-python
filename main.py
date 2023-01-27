@@ -1,7 +1,7 @@
 import pygame
 from consts import *
 from classes import *
-#aboba boba b
+
             # Создаем игру и окно
 pygame.init()
 pygame.mixer.init()
@@ -28,14 +28,12 @@ while running:
         if event.type == pygame.QUIT:  # check for closing window
             running = False
 
-    # Обновление
-    all_sprites.update()
+    # Обновление спрайтов
+    all_sprites.update() 
 
     # отрисовка
-    screen.fill(BLACK)
-    all_sprites.draw(screen)
-
-
+    screen.fill(BLACK) # закраштвает фон
+    all_sprites.draw(screen) # рисует спрайты
     
     clock.tick(FPS)  # Держим цикл на правильной скорости
     pygame.display.flip()  # После отрисовки всего, переворачиваем экран
