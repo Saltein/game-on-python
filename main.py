@@ -1,7 +1,7 @@
 import pygame
 from consts import *
 from classes import *
-
+#aboba
             # Создаем игру и окно
 pygame.init()
 pygame.mixer.init()
